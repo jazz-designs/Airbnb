@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+@import "tailwindcss";
+@import "flowbite-react/plugin/tailwindcss";
+@source "../.flowbite-react/class-list.json";
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+@plugin "daisyui" {
+  themes: light;
+}
+
+.dropdown {
+  @apply w-3xs h-15 text-left bg-white;
+}
+.sumbtn {
+  @apply w-3xs h-15 bg-none  text-left flex justify-start border-none;
+}
+.dropdownmenu {
+  @apply rounded-2xl w-3xs h-15 bg-white list-none shadow-2xl text-left  p-5;
+}
+.ul-list {
+  @apply p-5 rounded-2xl shadow-2xl list-none w-3xs;
+}
+
+.menu {
+  @apply rounded-2xl;
+}
+.chekcoutCard {
+  @apply absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-60%] h-[100] bg-white p-4 shadow-2xl rounded-3xl;
+}
+.headerLinks {
+  @apply flex align-middle gap-5 text-sm items-center relative;
+}
+.headerLinks::before {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  content: "";
+  height: 0;
+  width: 150%;
+  background-color: grey;
+  transition: height 0.3s ease;
+}
+
+.headerLinks:hover::before {
+  height: 3px;
+}
