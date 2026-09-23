@@ -1,7 +1,7 @@
 import PopularCard from "./Popularcard";
 import { useState, useEffect } from "react";
 import { createClient } from "@supabase/supabase-js";
-import MangloreRooms from "./MangloreRooms";
+import KeralaRooms from "./KeralaRooms";
 const supabase = createClient(
   "https://cgcwfeojgyeysplltgcu.supabase.co",
   "sb_publishable_TgIR6_0lD5x0Bi4R4gz18Q_-rw7SYCH",
@@ -47,13 +47,13 @@ export default function Popular({ setStreet }) {
       </section>
       <section className="mt-10 ml-13">
         <h2 className="text-lg font-medium flex gap-2 items-center">
-          Available rooms in Manlore{" "}
+          Available rooms in Kerala{" "}
           <img
             src="arrow.svg"
             className="h-7 w-7 bg-gray-100 p-1 rounded-full"
           />
         </h2>
-        <MangloreRooms room={rooms} />
+        <KeralaRooms room={rooms} />
       </section>
     </>
   );

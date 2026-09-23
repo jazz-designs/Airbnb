@@ -1,13 +1,13 @@
 import { useState } from "react";
 import CheckoutRoom from "./CheckoutRoom";
-export default function MangloreRooms({ room }) {
+export default function KeralaRooms({ room }) {
   const [clickedIndex, setClickedIndex] = useState(null);
 
-  const mangloreRooms = room.filter((item) => item.zip === "575001");
+  const keralaRooms = room.filter((item) => item.state === "KL");
 
   return (
     <div className="flex flex-row popcard">
-      {mangloreRooms.map((item, index) => (
+      {keralaRooms.map((item, index) => (
         <div
           key={index}
           className="mr-3"
