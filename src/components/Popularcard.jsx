@@ -16,7 +16,7 @@ export default function PopularCard({ room }) {
           />
           <p className="text-sm font-semibold mt-2 mb-.5 ml-2">{item.pname}</p>
           <p className="text-xs ml-2">
-            ${item.price} for 2 nights. {item.rating}
+            ${item.price} for a night. {item.rating}
           </p>
           {clickedIndex === index && (
             <CheckoutRoom
